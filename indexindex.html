@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Waffilicious – Apple Pie Waffle Shake</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .logo {
+      width: 220px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d2691e;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+      color: #ff4081;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .menu-box {
+      background-color: #fff0e1;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .menu-box h2 {
+      color: #d2691e;
+      margin-bottom: 10px;
+    }
+
+    .menu-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-box li {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #4b2e2e;
+    }
+
+    .quote {
+      font-size: 1.5em;
+      color: #e91e63;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .location {
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .form-box {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #fce4ec;
+      border-radius: 15px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-box h2 {
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #f50057;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .form-box, .menu-box {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo/Image -->
+<img src="C:\Users\Dell\Pictures\waffle waffle.png" alt="Apple Pie Waffle Shake" class="logo" />
+
+  <!-- Title + Tagline -->
+  <h1>Waffilicious</h1>
+  <p class="tagline">Your new waffle hangout!</p>
+
+  <!-- Menu -->
+  <div class="menu-box">
+    <h2>Top Picks</h2>
+    <ul>
+      <li>Nuts Overloaded</li>
+      <li>Oreo Waffle</li>
+      <li>Ferrero Rocher</li>
+      <li>Ice Cream Special</li>
+    </ul>
+  </div>
+
+  <!-- Quote & Location -->
+  <p class="quote">Opening Soon – Taste The Vibe!</p>
+  <p class="location">📍 Hyderabad, Bollarum near Ratnadeep</p>
+
+  <!-- Contact Form -->
+  <div class="form-box">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xgvzojwq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
