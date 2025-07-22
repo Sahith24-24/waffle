@@ -87,6 +87,59 @@
       border-radius: 8px;
       text-decoration: none;
     }
+     .form-box {
+      margin-top: 40px;
+      padding: 25px;
+      background-color: #fce4ec;
+      border-radius: 15px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-box h2 {
+      color: #c2185b;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+     button {
+      background-color: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #f50057;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .form-box, .menu-box {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -131,6 +184,15 @@
     <p><strong>UPI ID:</strong> sahithreddy@ybl</p>
     <p><strong>Google Pay / PhonePe / Paytm available</strong></p>
   </section>
+    <div class="form-box">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xgvzojwq" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="tel" name="phone" placeholder="Phone Number" required><br>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
   <footer>
     🍫 Opening Soon | © 2025 WAFFILICIOUS. All rights reserved.
   </footer>
